@@ -12,11 +12,11 @@ int main (void)
 	int i, j, tamanho ;
 	
 	printf ("\n digite uma frase..: ") ;
-	gets (frase) ;
+	fgets (frase, 10, stdin) ;
 	
 	tamanho = strlen (frase) ;
 	
-	printf ("\n O tamanho atual da frase é..: %d", tamanho) ;
+	printf ("\n O tamanho atual da frase Ã©..: %d", tamanho) ;
 
   	printf ("\n") ;
 	
@@ -26,12 +26,13 @@ int main (void)
 		{
 			if (frase[i] == espaco[j])
 			{
-				frase [i] = i - 1 ; // PARA RETIRAR OS ESPAÇOS E, DEPENDEDO DOS CASOS PODE ACRECER DE UM.
-				
-				printf ("\n ---À frase sem espaços ficou---\n\n %s", frase) ;
+				frase [i] = i - 1 ; // PARA RETIRAR OS ESPAÃ‡OS E, DEPENDEDO DOS CASOS PODE ACRECER DE UM.
+						
 			}
 		}
 	}
+	
+	printf ("\n ---Ã€ frase sem espaÃ§os ficou---\n\n %s", frase) ;
 	
 	return 0 ;
 	system ("pause") ;
